@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context="com.example.aleem.cryptoupdate.alert">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="140dp"
+        android:id="@+id/recyclerViewForAlerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:paddingTop="56.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="0.1dp"
+            android:textColor="#ffffff"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/btnCoin"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="1"
+            android:text="Coins"
+            android:onClick="coinClicked"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/btnFav"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="1"
+            android:text="Alerts"
+            android:onClick="alertListClicked"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="39dp"
+        android:background="@drawable/ic_add_circle_24dp" />
+
+</RelativeLayout>

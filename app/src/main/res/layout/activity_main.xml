@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:background="#E5E5E5"
+    tools:context="com.example.aleem.cryptoupdate.MainActivity">
+
+    <RelativeLayout
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="135dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="?attr/colorPrimary"
+            android:text="Name"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="Price"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="Change(24)"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:paddingLeft="235dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="190dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:paddingTop="56.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="0.1dp"
+            android:textColor="#ffffff"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/btnCoin"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="1"
+            android:text="Coins"
+            android:onClick="coinClicked"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/btnFav"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="1"
+            android:text="Alerts"
+            android:onClick="alertListClicked"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/searchTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:ems="9"
+        android:text=""
+        android:inputType="textFilter"
+        android:hint="Coin Name"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/searchBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_search_24dp"
+        android:onClick="searchCoin" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/alertTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Alert Me When"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingTop="40dp"
+            android:text="Above:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/aboveTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/above"
+            android:layout_alignBottom="@+id/above"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/current"
+            android:layout_toRightOf="@+id/current"
+            android:ems="9"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/above"
+            android:layout_marginTop="30dp"
+            android:text="Current:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/currentTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/current"
+            android:layout_alignBottom="@+id/current"
+            android:layout_alignLeft="@+id/aboveTxt"
+            android:layout_alignStart="@+id/aboveTxt"
+            android:ems="9"
+            android:focusable="false"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current"
+            android:layout_marginTop="30dp"
+            android:text="Below:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/belowTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/below"
+            android:layout_alignBottom="@+id/below"
+            android:layout_alignLeft="@+id/currentTxt"
+            android:layout_alignStart="@+id/currentTxt"
+            android:ems="9"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="400dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="20dp"
+        android:background="?attr/colorPrimary"
+        android:text="Save"
+        android:id="@+id/saveBtn"
+        android:textColor="#fff"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="20dp"
+        android:background="?attr/colorPrimary"
+        android:text="Cancel"
+        android:id="@+id/cancelBtn"
+        android:textColor="#fff"
+        android:textAllCaps="false" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
